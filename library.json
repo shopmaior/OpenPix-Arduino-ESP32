@@ -1,0 +1,17 @@
+{
+  "name": "OpenPix",
+  "keywords": "PIX, Payment, ESP32, Arduino, OpenPix, HTTP",
+  "description": "This library is a simple and efficient library for OpenPix (https://openpix.com.br) payment. This use the REST API of OpenPix to make payments.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/shopmaior/OpenPix-Arduino-ESP32.git"
+  },
+  "version": "0.1.0",
+  "authors": {
+    "name": "Ruan Aragão",
+    "url": "https://ruanaragao.com.br"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}
