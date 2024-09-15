@@ -10,6 +10,7 @@ class OpenPix
         OpenPix(char* appID, char* rootCA=NULL);
         String generateUniqueID();
         String pixCreateChargeInsecure(int value);
+        String pixGetImageQrCodeFromCharge(String paymentLinkID, int size = 1024);
         String pixPaymentStatusInsecure(String correlationID);
     
     private:

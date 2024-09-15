@@ -45,6 +45,13 @@ String OpenPix::pixCreateChargeInsecure(int value)
     return String(response);
 }
 
+String OpenPix::pixGetImageQrCodeFromCharge(String paymentLinkID, int size)
+{
+    // https://api.openpix.com.br/openpix/charge/brcode/image/{:id}.png?size=240
+    return String(host) + "/openpix/charge/brcode/image/" + paymentLinkID + ".png?size=" + String(size);
+}
+
+// Deprecated (becouse of the name)
 String OpenPix::pixPaymentStatusInsecure(String correlationID)
 {
     HTTPClient http;
